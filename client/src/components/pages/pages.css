@@ -1,0 +1,31 @@
+body {
+    background-image: url(../assets/images/middle_earth.png);
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+}
+
+html {
+    cursor:  url(http://cur.cursors-4u.net/user/use-1/use162.cur), auto !important;
+}
+
+.jumbotron {
+    color: white;
+    border-radius: 25px; 
+    background-color: rgba(99, 99, 99, .9);
+    margin-top: 125px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: 'MiddleEarth';
+    font-size: 50px;
+    padding: 5px;
+}
+
+h2 {
+    font-family: 'MiddleEarth';
+    font-size: 38px;
+}
