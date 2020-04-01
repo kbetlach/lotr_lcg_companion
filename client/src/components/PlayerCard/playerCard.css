@@ -1,0 +1,23 @@
+.card {
+    background-color: rgb(99, 99, 99);
+    border-radius: 10px;
+    font-family: 'MiddleEarth';
+    margin: 15px;
+    color: white;
+}
+
+input {
+    width: 125px;
+    background-color: rgb(99, 99, 99);
+    color: white;
+    border: transparent;
+}
+
+.player-name {
+    font-size: 38px;
+    width: 155px;
+}
+
+::placeholder {
+    color: white;
+}

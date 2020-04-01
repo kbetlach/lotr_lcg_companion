@@ -1,11 +1,14 @@
 import React from 'react';
 import "./pages.css";
+import PlayerCard from "../PlayerCard/PlayerCard";
 
 function QuestPage() {
     return(
-        <div className="container w3-container w3-center w3-animate-opacity">
-            <div className="jumbotron">
-                this will be a compilation of all the separate game components (willpower, player cards, etc.)
+        <div className="container w3-container w3-animate-opacity">
+            <div className="row">
+                <div className="col-md-6">
+                    <PlayerCard />
+                </div>
             </div>
         </div>
     ) 
