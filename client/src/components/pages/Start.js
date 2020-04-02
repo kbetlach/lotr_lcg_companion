@@ -1,6 +1,6 @@
 import React from 'react';
 import "./pages.css";
-import StartButton from "../StartButton/StartButton";
+import StartButton from "../Buttons/StartButton/StartButton";
 
 function StartPage() {
     return(

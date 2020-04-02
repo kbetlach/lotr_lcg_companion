@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import "./counter.css";
 
-function ResourceCounter() {
+function Counter() {
     const [count, setCount] = useState(0);
 
     return (
@@ -9,8 +10,8 @@ function ResourceCounter() {
                 <div className="col-md-2">
                   <button i class="fas fa-minus" onClick={() => setCount(count - 1)}></button>
                 </div>
-                <div className="col-md-2 align-items-center">
-                    <p>{count}</p>
+                <div className="col-md-2">
+                    <div className="count">{count}</div>
                 </div>
                 <div className="col-md-2">
                   <button i class="fas fa-plus" onClick={() => setCount(count + 1)}></button>
@@ -21,4 +22,4 @@ function ResourceCounter() {
     )
 }
 
-export default ResourceCounter;
+export default Counter;

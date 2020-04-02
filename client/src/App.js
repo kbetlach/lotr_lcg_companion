@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import StartPage from "./components/pages/Start";
-import QuestPage from "./components/pages/Quest";
+import StartPage from "./components/Pages/Start";
+import QuestPage from "./components/Pages/Quest";
 
 function App() {
   return (

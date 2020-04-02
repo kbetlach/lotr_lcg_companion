@@ -21,3 +21,14 @@ input {
 ::placeholder {
     color: white;
 }
+
+.threat {
+    position: relative;
+    top: 15px;
+}
+
+.resourceImg, .damageImg, .threatImg, .backpackImg {
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+}
