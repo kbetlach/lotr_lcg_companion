@@ -17,7 +17,7 @@ function PlayerCard() {
                     </div>
                     <div className="col-md-6 threat">
                         <u>Threat</u>
-                        <img className="threatImg" src={ThreatImg}></img>
+                        <img className="threatImg" src={ThreatImg} alt="threat token"></img>
                         <Counter />
                     </div>
                 </div>
@@ -27,15 +27,15 @@ function PlayerCard() {
                 <div className="row">
                     <div className="col-md-4">
                         <u>Heroes</u>
-                        <img className="backpackImg" src={BackpackImg}></img>
+                        <img className="backpackImg" src={BackpackImg} alt="backpack token"></img>
                     </div>
                     <div className="col-md-4">
                         <u>Damage</u>
-                        <img className="damageImg" src={DamageImg}></img>
+                        <img className="damageImg" src={DamageImg} alt="arrow damage token"></img>
                     </div>
                     <div className="col-md-4">
                         <u>Resources</u>
-                        <img className="resourceImg" src={ResourceImg}></img>
+                        <img className="resourceImg" src={ResourceImg} alt="single resource token"></img>
                     </div>
                 </div>
                 
