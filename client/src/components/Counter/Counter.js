@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import "./counter.css";
 
 function Counter() {
-    const [count, setCount] = useState(0);
+    let [count, setCount] = useState(0);
+
+    if (count < 0) {
+        count = 0;
+    }
 
     return (
         <div>

@@ -13,7 +13,7 @@ function PlayerCard() {
             <div className="card-body">
                 <div className="row">
                     <div className="col-md-6">
-                        <h1><input className="player-name" placeholder="Player"></input></h1>
+                        <h1><input className="player-name" placeholder="Player" type="text"></input></h1>
                     </div>
                     <div className="col-md-6 threat">
                         <u>Threat</u>
