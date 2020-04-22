@@ -4,6 +4,7 @@
     font-family: 'MiddleEarth';
     margin: 15px;
     color: white;
+    border: solid white 2px;
 }
 
 input {
@@ -13,9 +14,13 @@ input {
     border: transparent;
 }
 
+select {
+    width: 125px;
+}
+
 .player-name {
     font-size: 38px;
-    width: 155px;
+    width: 200px;
 }
 
 ::placeholder {

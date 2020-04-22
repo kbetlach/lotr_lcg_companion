@@ -11,7 +11,7 @@ function QuestPage() {
             <div className="row">
                 <div className="col-md-3"></div>
                 <div className="col-md-6"><Progress /></div>
-                <div className="col-md-3"><RoundSequenceButton /></div>
+                <div className="col-md-3" style={{marginTop: "50px"}}><RoundSequenceButton /></div>
             </div>
 
             <div className="row">

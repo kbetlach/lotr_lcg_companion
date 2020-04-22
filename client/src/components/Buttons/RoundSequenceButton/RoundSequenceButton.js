@@ -22,17 +22,17 @@ function RoundSequenceButton() {
             </button>
 
             <div aria-hidden="true" aria-labelledby="sequenceModalLabel" className="modal fade" id="sequenceModal" role="dialog" tabindex="-1">
-                        <div className="modal-dialog" role="document">
+                        <div className="modal-dialog" role="document" style={{fontFamily: "MiddleEarth"}}>
                             <div className="modal-content">
                                 <div className="modal-header" style = {{backgroundColor: "rgb(99, 99, 99)"}}>
-                                    <h5 style = {{color: 'white'}} className="modal-title" id="sequenceModal">Round Sequence</h5>
+                                    <h5 style = {{color: 'white', fontFamily: "MiddleEarth", fontSize: "28px"}} className="modal-title" id="sequenceModal">Round Sequence</h5>
                                     <button style = {{color: 'white'}} aria-label="Close" className="close" data-dismiss="modal" type="button">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <form id="roundSequence">
                                     <div className="modal-body">
-                                        <div className="form-group" style={{textAlign: "left", fontSize: "20px"}}>
+                                        <div className="form-group" style={{textAlign: "left", fontSize: "20px", color: "rgb(99, 99, 99)"}}>
                                             <u><ol>1. Resource Phase</ol></u>
                                                 <li>Each player adds 1 resource to each of their heroes' resource pools.</li>
                                                 <li>Player actions.</li>

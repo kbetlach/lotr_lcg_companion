@@ -41,7 +41,9 @@ function PlayerCard() {
                 
                 <div className="row">
                     <div className="col-md-4">
-                        <input placeholder="Hero 1"></input>
+                        <select id="heroOne">
+                            <option value="" disabled selected hidden>Hero 1</option>
+                        </select>
                     </div>
                     <div className="col-md-4">
                         <Counter />
@@ -55,7 +57,9 @@ function PlayerCard() {
 
                 <div className="row">
                     <div className="col-md-4">
-                        <input placeholder="Hero 2"></input>
+                    <select id="heroTwo">
+                            <option value="" disabled selected hidden>Hero 2</option>
+                        </select>
                     </div>
                     <div className="col-md-4">
                         <Counter />
@@ -69,7 +73,9 @@ function PlayerCard() {
                 
                 <div className="row">
                     <div className="col-md-4">
-                        <input placeholder="Hero 3"></input>
+                    <select id="heroThree">
+                            <option value="" disabled selected hidden>Hero 3</option>
+                        </select>
                     </div>
                     <div className="col-md-4">
                         <Counter />
