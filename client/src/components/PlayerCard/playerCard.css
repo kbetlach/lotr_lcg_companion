@@ -16,6 +16,8 @@ input {
 
 select {
     width: 125px;
+    background-color: transparent;
+    color: white;
 }
 
 .player-name {

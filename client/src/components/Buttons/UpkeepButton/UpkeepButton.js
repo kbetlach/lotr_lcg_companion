@@ -1,13 +1,20 @@
-import React from 'react';
-import "../../Counter/Counter";
+import React, { useState } from 'react';
+import "../../Counter/UpkeepCounter";
 
-function UpkeepButton(props) {
+function UpkeepButton() {
+
+    let [count, setCount] = useState(0);
+
+    if (count < 0) {
+        count = 0;
+    }
+
     return (
         <div>
             <button type="button"
                 style={
                     {
-                        width: "125px",
+                        width: "100px",
                         height: "50px",
                         fontSize: "18px",
                         backgroundColor: "white",
@@ -16,7 +23,10 @@ function UpkeepButton(props) {
                         border: ".5px solid white",
                         padding: 5,
                         fontFamily: "MiddleEarth",
-                        cursor: "pointer"
+                        cursor: "pointer",
+                        position: "absolute",
+                        right: "25px",
+                        bottom: "25px"
                     }
             }>
                 Upkeep

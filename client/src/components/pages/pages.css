@@ -12,6 +12,7 @@ html {
 .jumbotron {
     color: white;
     border-radius: 25px; 
+    border: solid white 2px;
     background-color: rgba(99, 99, 99, .9);
     margin-top: 125px;
     width: 960px;

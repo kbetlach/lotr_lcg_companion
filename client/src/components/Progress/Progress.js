@@ -1,7 +1,7 @@
 import React from 'react';
 import "./progress.css";
 import ProgressImg from "../../assets/images/progress.png";
-import Counter from "../Counter/Counter";
+import QuestCounter from "../Counter/QuestCounter";
 
 function Progress() {
     return (
@@ -24,7 +24,7 @@ function Progress() {
                             <p>Committed Willpower</p>
                         </div>
                         <div className="col-md-6">
-                            <Counter />
+                            <QuestCounter />
                         </div>
                     </div>
 
@@ -33,7 +33,7 @@ function Progress() {
                             <p>Active Location</p>
                         </div>
                         <div className="col-md-6">
-                            <Counter />
+                            <QuestCounter />
                         </div>
                     </div>
 
@@ -42,7 +42,7 @@ function Progress() {
                             <p>Quest</p>
                         </div>
                         <div className="col-md-6">
-                            <Counter />
+                            <QuestCounter />
                         </div>
                     </div>
                  </div>

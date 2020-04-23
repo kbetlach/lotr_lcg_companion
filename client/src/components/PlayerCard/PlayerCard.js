@@ -1,6 +1,8 @@
 import React from 'react';
 import "./playerCard.css";
-import Counter from "../Counter/Counter";
+import UpkeepCounter from "../Counter/UpkeepCounter";
+import DamageCounter from "../Counter/DamageCounter";
+import UpkeepButton from "../Buttons/UpkeepButton/UpkeepButton";
 import ResourceImg from "../../assets/images/resource.png";
 import ThreatImg from "../../assets/images/threat.png";
 import DamageImg from "../../assets/images/damage.png";
@@ -12,13 +14,16 @@ function PlayerCard() {
         <div className="card">
             <div className="card-body">
                 <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-5">
                         <h1><input className="player-name" placeholder="Player" type="text"></input></h1>
                     </div>
-                    <div className="col-md-6 threat">
+                    <div className="col-md-5 threat">
                         <u>Threat</u>
                         <img className="threatImg" src={ThreatImg} alt="threat token"></img>
-                        <Counter />
+                        <UpkeepCounter />
+                    </div>
+                    <div className="col-md-2">
+                        <UpkeepButton />
                     </div>
                 </div>
 
@@ -46,10 +51,10 @@ function PlayerCard() {
                         </select>
                     </div>
                     <div className="col-md-4">
-                        <Counter />
+                        <DamageCounter />
                     </div>
                     <div className="col-md-4">
-                        <Counter />
+                        <UpkeepCounter />
                     </div>
                 </div>
 
@@ -62,10 +67,10 @@ function PlayerCard() {
                         </select>
                     </div>
                     <div className="col-md-4">
-                        <Counter />
+                        <DamageCounter />
                     </div>
                     <div className="col-md-4">
-                        <Counter />
+                        <UpkeepCounter />
                     </div>
                 </div>
 
@@ -78,10 +83,10 @@ function PlayerCard() {
                         </select>
                     </div>
                     <div className="col-md-4">
-                        <Counter />
+                        <DamageCounter />
                     </div>
                     <div className="col-md-4">
-                        <Counter />
+                        <UpkeepCounter />
                     </div>
                 </div>
             </div>
