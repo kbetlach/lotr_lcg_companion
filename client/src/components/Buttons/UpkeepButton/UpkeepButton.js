@@ -1,17 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { count } from "../../Counter/UpkeepCounter";
 import "../../Counter/UpkeepCounter";
 
 function UpkeepButton() {
 
-    let [count, setCount] = useState(0);
-
-    if (count < 0) {
-        count = 0;
-    }
-
     return (
         <div>
-            <button type="button"
+            <button type="button" onClick={count + 1}
                 style={
                     {
                         width: "100px",

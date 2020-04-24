@@ -1,20 +1,27 @@
-import React from 'react';
-import UpkeepButton from "../Buttons/UpkeepButton/UpkeepButton";
+import React, { useState } from 'react';
 import "./counter.css";
 
-function UpkeepCounter(props) {
+export let count;
+
+function UpkeepCounter() {
+
+    let [count, setCount] = useState(0);
+
+    if (count < 0) {
+        count = 0;
+    }
 
     return (
         <div>
             <div className="row">
                 <div className="col-md-2">
-                  <button i class="fas fa-minus" onClick={() => props.setCount(props.count - 1)}></button>
+                  <button i class="fas fa-minus" onClick={() => setCount(count - 1)}></button>
                 </div>
                 <div className="col-md-2">
-                    <div className="count">{props.count}</div>
+                    <div className="count">{count}</div>
                 </div>
                 <div className="col-md-2">
-                  <button i class="fas fa-plus" onClick={() => props.setCount(props.count + 1)}></button>
+                  <button i class="fas fa-plus" onClick={() => setCount(count + 1)}></button>
                 </div>
                 <div className="col-md-6"></div>
             </div>
