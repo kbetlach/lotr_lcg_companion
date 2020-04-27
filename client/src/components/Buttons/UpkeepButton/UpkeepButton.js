@@ -1,12 +1,11 @@
 import React from 'react';
-import { count } from "../../Counter/UpkeepCounter";
 import "../../Counter/UpkeepCounter";
 
 function UpkeepButton() {
 
     return (
         <div>
-            <button type="button" onClick={count + 1}
+            <button type="button"
                 style={
                     {
                         width: "100px",
