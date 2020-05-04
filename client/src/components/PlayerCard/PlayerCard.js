@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from "react";
 import "./playerCard.css";
+import API from "../../utils/API";
 import UpkeepCounter from "../Counter/UpkeepCounter";
 import DamageCounter from "../Counter/DamageCounter";
 import UpkeepButton from "../Buttons/UpkeepButton/UpkeepButton";
@@ -9,6 +10,18 @@ import DamageImg from "../../assets/images/damage.png";
 import BackpackImg from "../../assets/images/backpack.png";
 
 function PlayerCard() {
+
+    const [heroSearch, setHeroSearch] = useState("");
+
+    const heroDropdown = event => {
+        event.preventDefault();
+        API.getAPIHeroes(heroSearch)
+            .then(res => {
+                console.log(res)
+                setHeroSearch(res.name)})
+                .catch(err => console.log(err));
+            }
+
     return (
     <div>
         <div className="card">
@@ -47,7 +60,7 @@ function PlayerCard() {
                 <div className="row">
                     <div className="col-md-4">
                         <select id="heroOne">
-                            <option value="" disabled selected hidden>Hero 1</option>
+                            <option value="Hero 1" onClick={heroDropdown}>Hero 1</option>
                         </select>
                     </div>
                     <div className="col-md-4">
@@ -62,8 +75,8 @@ function PlayerCard() {
 
                 <div className="row">
                     <div className="col-md-4">
-                    <select id="heroTwo">
-                            <option value="" disabled selected hidden>Hero 2</option>
+                        <select id="heroTwo">
+                            <option value="Hero 2">Hero 2</option>
                         </select>
                     </div>
                     <div className="col-md-4">
@@ -78,8 +91,8 @@ function PlayerCard() {
                 
                 <div className="row">
                     <div className="col-md-4">
-                    <select id="heroThree">
-                            <option value="" disabled selected hidden>Hero 3</option>
+                        <select id="heroThree">
+                            <option value="Hero 3">Hero 3</option>
                         </select>
                     </div>
                     <div className="col-md-4">

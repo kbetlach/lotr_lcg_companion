@@ -13,13 +13,13 @@ function QuestCounter() {
         <div>
             <div className="row">
                 <div className="col-md-2">
-                  <button i class="fas fa-minus" onClick={() => setCount(count - 1)}></button>
+                  <button i className="fas fa-minus" onClick={() => setCount(count - 1)}></button>
                 </div>
                 <div className="col-md-2">
                     <div className="count">{count}</div>
                 </div>
                 <div className="col-md-2">
-                  <button i class="fas fa-plus" onClick={() => setCount(count + 1)}></button>
+                  <button i className="fas fa-plus" onClick={() => setCount(count + 1)}></button>
                 </div>
                 <div className="col-md-6"></div>
             </div>
