@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./playerCard.css";
-import API from "../../utils/API";
 import UpkeepCounter from "../Counter/UpkeepCounter";
 import DamageCounter from "../Counter/DamageCounter";
 import UpkeepButton from "../Buttons/UpkeepButton/UpkeepButton";
@@ -10,17 +9,6 @@ import DamageImg from "../../assets/images/damage.png";
 import BackpackImg from "../../assets/images/backpack.png";
 
 function PlayerCard() {
-
-    const [heroSearch, setHeroSearch] = useState("");
-
-    const heroDropdown = event => {
-        event.preventDefault();
-        API.getAPIHeroes(heroSearch)
-            .then(res => {
-                console.log(res)
-                setHeroSearch(res.name)})
-                .catch(err => console.log(err));
-            }
 
     return (
     <div>
